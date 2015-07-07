@@ -30,3 +30,8 @@ func GenricFunc (structPtr interface{}) error {
   return nil
 }
 
+func generic(strct interface{}){
+  val := reflect.TypeOf(strct)
+	value := reflect.New(val) // creates a pointervalue for the given type
+}
+
